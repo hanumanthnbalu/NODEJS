@@ -156,9 +156,19 @@ exports.postSignup = (req, res, next) => {
         to: email,
         from: "HANUMANTH NBALU<hanumanthnbalu@gmail.com>",
         subject: "Signup succeeded!",
-        html: `<h1>You successfully signed up!</h1>
-              <p> thanks for being here!!</p>
-              <h3>We are happy to have you</h3>
+        html: `<div style="
+        background: #f7f0f0;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        width: 70%;
+        border: 1px solid #cdcdcd;
+        margin: 0 auto;
+    ">
+        <h1>You successfully signed up!</h1>
+        <h3>We are happy to have you</h3>
+        <p> thanks you!!</p>
+        </div>
               `
       });
     })
